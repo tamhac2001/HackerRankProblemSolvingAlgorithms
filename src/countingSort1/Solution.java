@@ -12,7 +12,9 @@ public class Solution {
 		int arr[] = new int[100];
 		String temp = bf.readLine();
 		int lower = 0;
-		int upper = 50;
+		int upper;
+		if(temp.length()>50) upper=50;
+		else upper=temp.length();
 		do {
 			if(upper!=temp.length()) {
 				while(temp.charAt(upper)!=' ') {
